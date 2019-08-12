@@ -64,17 +64,28 @@ module.exports = function (ctx) {
         'QSeparator',
         'QChip',
         'QTooltip',
+        'QBar',
+        'QSpace',
+        // table
+        'QTable',
+        'QTh',
+        'QTr',
+        'QTd',
+        'QExpansionItem',
+        'QPopupEdit',
+        'QDialog',
+        'QCardActions',
       ],
 
-      directives: ['Ripple'],
+      directives: ['Ripple', 'ClosePopup'],
 
       // Quasar plugins
       plugins: ['Notify', 'Loading', 'LoadingBar', 'Dialog'],
       config: {
         loadingBar: {
           color: 'purple',
-          size: '10px',
-          position: 'top',
+          size: '5px',
+          position: 'bottom',
           skipHijack: true,
         },
       },
